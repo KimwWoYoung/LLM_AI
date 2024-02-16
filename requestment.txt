@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+pydantic
+pinecone-client
+openai
+tdqm
+regex
+langchain
+nest_asyncio
+jinja2 
