@@ -1,0 +1,19 @@
+<!-- templates/result.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Query Result</title>
+</head>
+<body>
+    <h1>Query Result</h1>
+    <p>Output Text: {{ output_text }}</p>
+    <p>Case Numbers: {% if case_nums %}{{ case_nums | join(', ') }}{% else %}None{% endif %}</p>
+    {% if case_nums %}
+        <!-- 각 case_num에 대한 상세 페이지 링크 생성 -->
+        {% for case_num in case_nums %}
+            <a href="/query/detail/{{ case_num }}">{{ case_num }}에 대한 설명</a><br>
+        {% endfor %}
+    {% endif %}
+    <a href="/query/">Ask another question</a>
+</body>
+</html>

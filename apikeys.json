@@ -1,0 +1,9 @@
+{
+    "pinecone": {
+        "key": "4a699b62-3504-48ce-818d-a6bf759d43cf",
+        "env": "us-west-2"
+    },
+    "open_ai": {
+        "key": "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"  
+    }
+}
